@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Demo MPI IPAS Kelas 6 Jelajah 6 Benua Dunia. Coba materi dan satu permainan sebelum membeli versi premium.">
+<title>MPI IPAS Kelas 6 — Jelajah 6 Benua Dunia | Demo</title>
+<style>
+:root{--navy:#061426;--blue:#0784c7;--cyan:#00e5ff;--gold:#f4c95d;--pink:#ff426d;--white:#f7fbff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--white);background:radial-gradient(ellipse at 75% 0%,#123c65 0%,transparent 38%),linear-gradient(145deg,#020817,#071c33 55%,#03101d);line-height:1.6}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0}.brand{font-weight:900;letter-spacing:.04em}.brand span{color:var(--cyan)}.nav a{font-size:.92rem;text-decoration:none;opacity:.9}
+.hero{padding:52px 0 36px;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}.eyebrow{display:inline-block;border:1px solid #00e5ff77;background:#00e5ff12;color:var(--cyan);border-radius:99px;padding:6px 12px;font-size:.8rem;font-weight:800;letter-spacing:.07em}
+h1{font-size:clamp(2.2rem,5vw,4.4rem);line-height:1.06;letter-spacing:-.04em;margin:18px 0}h1 em{font-style:normal;color:var(--gold)}.lead{font-size:1.1rem;color:#c7d8e9;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 19px;border-radius:12px;text-decoration:none;font-weight:900;border:1px solid transparent;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(100deg,#00d9ee,#0784c7);color:#031321;box-shadow:0 8px 28px #00d9ee26}.whatsapp{background:#25d366;color:#062a17}.ghost{border-color:#4d7292;background:#ffffff08}.fine{font-size:.83rem;color:#9fb4ca}.mock{border:1px solid #00e5ff65;background:linear-gradient(140deg,#0c2842,#071321);border-radius:24px;padding:14px;box-shadow:0 25px 70px #0008,0 0 35px #00e5ff13;transform:rotate(1deg)}.mock-screen{min-height:340px;border-radius:15px;background:radial-gradient(circle at 50% 25%,#1d75a5,#081629 65%);padding:24px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.orb{position:absolute;width:220px;height:220px;border-radius:50%;right:-40px;top:40px;background:radial-gradient(circle at 30% 30%,#70eaff,#1674bc 45%,#092d59 72%);box-shadow:inset -20px -15px 40px #031126,0 0 40px #00e5ff66}.mock-title{position:relative;font-size:1.25rem;font-weight:900;max-width:230px}.mini-cards{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.mini-cards span{background:#061426db;border:1px solid #00e5ff6b;border-radius:10px;padding:10px 4px;text-align:center;font-size:.75rem;font-weight:800}
+section{padding:48px 0}.section-head{text-align:center;max-width:740px;margin:0 auto 26px}.section-head h2{font-size:clamp(1.7rem,3.5vw,2.5rem);margin:0 0 8px}.section-head p{color:#afc3d7}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#102b45dd,#061426dd);border:1px solid #5a7d9a66;border-radius:17px;padding:22px}.icon{font-size:1.9rem}.card h3{margin:9px 0 5px}.card p{margin:0;color:#b7c9d9;font-size:.95rem}.limited{border-color:#f4c95d99}.tag{display:inline-block;margin-top:12px;font-size:.75rem;font-weight:900;color:#ffe69c;background:#f4c95d18;border:1px solid #f4c95d55;padding:4px 8px;border-radius:7px}
+.demo-panel{border:1px solid #00e5ff66;border-radius:22px;padding:clamp(18px,4vw,32px);background:linear-gradient(145deg,#0b2740,#071321);display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.demo-panel h2{margin:0 0 6px}.demo-panel p{color:#b7c9d9;margin:0}.price-note{color:var(--gold);font-weight:900}.steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-top:2px solid var(--cyan);padding:15px;background:#ffffff06;border-radius:0 0 12px 12px}.step b{display:block;margin-bottom:6px}.security{font-size:.92rem;color:#b5c8d9;background:#020b16;border:1px solid #2b4c69;border-radius:14px;padding:18px}.security strong{color:#ffe69c}footer{border-top:1px solid #28415b;padding:24px 0;color:#8da7be;font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:30px}.mock{transform:none}.grid,.steps{grid-template-columns:1fr}.demo-panel{grid-template-columns:1fr}.nav{align-items:flex-start}.nav .navlinks{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="brand">JELAJAH <span>6 BENUA</span></div><div class="navlinks"><a href="#fitur">Fitur</a> &nbsp; <a href="#demo">Coba Demo</a> &nbsp; <a href="#lisensi">Lisensi</a></div></header>
+<main>
+<section class="wrap hero">
+  <div>
+    <span class="eyebrow">MEDIA PEMBELAJARAN INTERAKTIF · IPAS KELAS 6</span>
+    <h1>Jelajahi dunia dengan cara yang <em>lebih seru.</em></h1>
+    <p class="lead">MPI IPAS Kelas 6 — Jelajah 6 Benua Dunia menghadirkan pengalaman belajar digital dengan eksplorasi materi, peta interaktif, tantangan permainan, evaluasi, refleksi, dan sertifikat.</p>
+    <div class="actions"><a class="btn primary" href="mpi-ipas-demo-terbatas.html">🚀 Coba Demo Terbatas</a><a class="btn whatsapp" href="https://wa.me/6285196543766?text=Halo%2C%20saya%20tertarik%20membeli%20MPI%20IPAS%20Kelas%206%20Jelajah%206%20Benua%20Dunia." target="_blank" rel="noopener">💬 Tanya via WhatsApp</a></div>
+    <p class="fine">Demo gratis: materi geografis Benua Asia dan satu permainan Jigsaw 1. Fitur lain tetap tersedia pada paket premium.</p>
+  </div>
+  <div class="mock" aria-label="Ilustrasi tampilan aplikasi">
+    <div class="mock-screen"><div class="orb"></div><div class="mock-title">PETUALANGAN EDUKASI<br><span style="color:#00e5ff">6 BENUA DUNIA</span></div><div class="mini-cards"><span>🌏 Asia</span><span>🧩 Jigsaw</span><span>🏆 Premium</span></div></div>
+  </div>
+</section>
+<section id="fitur" class="wrap">
+  <div class="section-head"><h2>Belajar, menjelajah, dan bermain</h2><p>Halaman penjualan ini memperkenalkan fitur aplikasi. Detail materi dan interaksi tetap mengikuti desain MPI asli.</p></div>
+  <div class="grid">
+    <article class="card"><div class="icon">🌐</div><h3>Peta 6 Benua</h3><p>Jelajahi benua melalui peta interaktif dan pilih bagian yang ingin dipelajari.</p></article>
+    <article class="card"><div class="icon">📚</div><h3>Materi Terstruktur</h3><p>Materi dibagi ke kategori geografis, astronomis, sosial budaya, bentang alam, dan potensi.</p></article>
+    <article class="card"><div class="icon">🧩</div><h3>Tantangan Interaktif</h3><p>Permainan jigsaw, puzzle, drag-and-drop, dan kegiatan mengelompokkan.</p></article>
+    <article class="card"><div class="icon">📝</div><h3>Evaluasi</h3><p>Evaluasi akhir untuk membantu melihat pemahaman murid terhadap materi.</p></article>
+    <article class="card"><div class="icon">💭</div><h3>Refleksi Belajar</h3><p>Ruang refleksi untuk menuliskan pengalaman dan kesan belajar.</p></article>
+    <article class="card"><div class="icon">🏆</div><h3>Skor dan Sertifikat</h3><p>Rekap progres dan fasilitas sertifikat pada versi lengkap.</p></article>
+  </div>
+</section>
+<section id="demo" class="wrap">
+  <div class="demo-panel"><div><h2>Mulai dari demo terbatas</h2><p>Rasakan gaya visual aplikasi, pelajari satu contoh materi, lalu coba satu permainan. Bagian premium diberi penanda kunci.</p><p class="price-note">Tanpa menghapus fitur pada sumber versi premium.</p></div><a class="btn primary" href="mpi-ipas-demo-terbatas.html">Buka Demo →</a></div>
+</section>
+<section id="lisensi" class="wrap">
+  <div class="section-head"><h2>Bagaimana mendapatkan versi premium?</h2><p>Pengiriman direncanakan menggunakan akun atau kode lisensi setelah pemesanan dikonfirmasi.</p></div>
+  <div class="steps">
+    <div class="step"><b>1. Hubungi penjual</b><span class="fine">Tanyakan harga, cakupan penggunaan, dan metode lisensi.</span></div>
+    <div class="step"><b>2. Konfirmasi pesanan</b><span class="fine">Sepakati detail pembelian dan data yang diperlukan untuk pengiriman.</span></div>
+    <div class="step"><b>3. Terima akses premium</b><span class="fine">Akun atau kode lisensi diberikan sesuai sistem distribusi yang disepakati.</span></div>
+  </div>
+  <div class="actions" style="justify-content:center"><a class="btn whatsapp" href="https://wa.me/?text=Halo%2C%20saya%20ingin%20menanyakan%20harga%20dan%20lisensi%20MPI%20IPAS%20Kelas%206%20Jelajah%206%20Benua%20Dunia." target="_blank" rel="noopener">💬 Hubungi via WhatsApp</a></div>
+</section>
+<section class="wrap">
+  <div class="security"><strong>Catatan keamanan:</strong> demo HTML yang berjalan di browser hanya membatasi akses melalui antarmuka. Pengguna yang memahami HTML/JavaScript mungkin dapat melewati pembatasan atau membaca kode yang dikirim ke perangkatnya. Untuk lisensi premium yang benar-benar terlindungi, validasi akun/kode sebaiknya dilakukan di server, bukan hanya di JavaScript. Tautan WhatsApp saat ini membuka WhatsApp dengan pesan siap kirim; ganti URL <code>wa.me/?text=...</code> dengan <code>wa.me/62xxxxxxxxxxx?text=...</code> memakai nomor penjual yang benar.</div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span>MPI IPAS Kelas 6 — Jelajah 6 Benua Dunia</span><span>Demo penjualan · Versi penuh dikirim dengan akun/kode lisensi</span></div></footer>
+</body>
+</html>
